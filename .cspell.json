@@ -1,0 +1,20 @@
+{
+   "language": "en",
+   "enableGlobDot": true,
+   "ignorePaths": [
+      ".git",
+      ".gitignore",
+      ".vscode",
+      "node_modules"
+   ],
+   "dictionaryDefinitions": [
+      {
+         "name": "custom-words",
+         "description": "Custom words for UIC Pharmacy projects.",
+         "path": "./custom-words.txt"
+      }
+   ],
+   "dictionaries": [
+      "custom-words"
+   ]
+}

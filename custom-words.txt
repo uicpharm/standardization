@@ -1,0 +1,13 @@
+# Tech Words
+commitlint
+nvmrc
+stylelint
+stylelintrc
+vuejs
+
+# UIC Vocabulary
+uicpharm
+
+# Other typically allowable words
+avenir
+fullversion

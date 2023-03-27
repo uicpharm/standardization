@@ -1,0 +1,29 @@
+{
+   "name": "@uicpharm/standardization",
+   "version": "0.0.0",
+   "description": "Lint and code standardization for UIC Pharmacy projects.",
+   "scripts": {
+      "test": "check-node-version --node 18.14.2 --npm 9.5.0",
+      "standards": "npm run markdownlint && npm run stylelint && npm run cspell && npm run commitlint",
+      "commitlint": "commitlint --from e4053a7754a81",
+      "cspell": "cspell . --show-suggestions --no-progress",
+      "markdownlint": "markdownlint **/*.md --ignore node_modules",
+      "stylelint": "stylelint **/*.css **/*.scss"
+   },
+   "repository": "https://github.com/uicpharm/standardization.git",
+   "author": "Josh Curtiss <jcurt@uic.edu>",
+   "license": "UNLICENSED",
+   "bugs": {
+      "url": "https://github.com/uicpharm/standardization/issues"
+   },
+   "homepage": "https://github.com/uicpharm/standardization#readme",
+   "dependencies": {
+      "@commitlint/cli": "17.5.0",
+      "check-node-version": "4.2.1",
+      "cspell": "6.31.1",
+      "markdownlint-cli": "0.33.0",
+      "stylelint": "14.16.1",
+      "stylelint-config-standard-scss": "6.1.0",
+      "stylelint-scss": "4.6.0"
+   }
+}
