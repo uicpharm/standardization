@@ -1,5 +1,3 @@
-'use strict';
-
 const VALID_TYPES = [
    'build',
    'chore',

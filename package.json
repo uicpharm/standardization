@@ -4,9 +4,10 @@
    "description": "Lint and code standardization for UIC Pharmacy projects.",
    "scripts": {
       "test": "check-node-version --node 18.14.2 --npm 9.5.0",
-      "standards": "npm run markdownlint && npm run stylelint && npm run cspell && npm run commitlint",
+      "standards": "npm run eslint && npm run markdownlint && npm run stylelint && npm run cspell && npm run commitlint",
       "commitlint": "commitlint --from e4053a7754a81",
       "cspell": "cspell . --show-suggestions --no-progress",
+      "eslint": "eslint .",
       "markdownlint": "markdownlint **/*.md --ignore node_modules",
       "stylelint": "stylelint **/*.css **/*.scss"
    },
@@ -19,8 +20,11 @@
    "homepage": "https://github.com/uicpharm/standardization#readme",
    "dependencies": {
       "@commitlint/cli": "17.5.0",
+      "@vue/eslint-config-airbnb": "7.0.0",
+      "@vue/eslint-config-typescript": "11.0.2",
       "check-node-version": "4.2.1",
       "cspell": "6.31.1",
+      "eslint": "8.36.0",
       "markdownlint-cli": "0.33.0",
       "stylelint": "14.16.1",
       "stylelint-config-standard-scss": "6.1.0",
