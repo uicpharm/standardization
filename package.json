@@ -1,6 +1,6 @@
 {
    "name": "@uicpharm/standardization",
-   "version": "0.0.0",
+   "version": "0.1.0",
    "description": "Lint and code standardization for UIC Pharmacy projects.",
    "scripts": {
       "test": "check-node-version --node 18.14.2 --npm 9.5.0",
