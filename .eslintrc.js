@@ -39,7 +39,16 @@ module.exports = {
             tsx: 'never',
          },
       ],
-      'import/no-extraneous-dependencies': [ 'error', { devDependencies: [ '**/*.test.{j,t}s', 'vue.config.{j,t}s' ] } ],
+      'import/no-extraneous-dependencies': [
+         'error',
+         {
+            devDependencies: [
+               '**/*.test.{j,t}s',
+               '**/.vitepress/**/*.{j,t}s',
+               'vue.config.{j,t}s',
+            ],
+         },
+      ],
       'lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: true } ],
       '@typescript-eslint/no-var-requires': 'off',
    },
