@@ -8,6 +8,11 @@ module.exports = {
       'plugin:vue/vue3-recommended',
       '@vue/airbnb',
    ],
+   ignorePatterns: [
+      'cache',
+      'dist',
+      '!.vitepress',
+   ],
    parserOptions: {
       ecmaVersion: 2020,
    },
