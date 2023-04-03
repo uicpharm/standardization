@@ -1,8 +1,11 @@
 # Tech Words
 commitlint
+frontmatter
 nvmrc
 stylelint
 stylelintrc
+vite
+vitepress
 vuejs
 
 # UIC Vocabulary
