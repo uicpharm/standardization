@@ -1,7 +1,10 @@
 # Tech Words
 commitlint
 frontmatter
+letsencrypt
+nginxproxymanager
 nvmrc
+shellcheck
 stylelint
 stylelintrc
 vite
