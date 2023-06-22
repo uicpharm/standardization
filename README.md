@@ -9,6 +9,8 @@ projects, including:
      ([extension][vsc-cspell])
    - Commit message linting with [commitlint](https://commitlint.js.org)
      ([extension][vsc-commitlint])
+   - Shell script linting with [ShellCheck](https://www.shellcheck.net)
+     ([extension][vsc-shellcheck])
    - Stylesheet linting with [Stylelint](https://stylelint.io)
      ([extension][vsc-stylelint])
    - Markdown linting with [markdownlint](https://github.com/DavidAnson/markdownlint)
@@ -23,6 +25,7 @@ projects, including:
 [vsc-editorconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
 [vsc-eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 [vsc-markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+[vsc-shellcheck]: https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck
 [vsc-stylelint]: https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
 
 We use these tools by setting up simple scripts that run these tests, which are
@@ -96,6 +99,19 @@ from. For example, if the commit hash was `a1b2c3d4e5`:
 ```json
 "scripts": {
    "commitlint": "commitlint --from a1b2c3d4e5",
+}
+```
+
+### Shell Script Linting
+
+[ShellCheck](https://www.shellcheck.net) will lint your shell scripts! No additional
+configuration is necessary.
+
+Add a script in `package.json` similar to this:
+
+```json
+"scripts": {
+   "shellcheck": "shellcheck **/*.sh"
 }
 ```
 
@@ -201,7 +217,7 @@ For instance, if you're using all of the tools, your scripts may look like this:
 
 ```json
 "scripts": {
-   "standards": "npm run eslint && npm run stylelint && npm run yamllint && npm run markdownlint && npm run cspell && npm run commitlint",
+   "standards": "npm run eslint && npm run stylelint && npm run shellcheck && npm run yamllint && npm run markdownlint && npm run cspell && npm run commitlint",
    "test": "npm run check-node"
 }
 ```
