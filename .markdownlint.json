@@ -8,7 +8,7 @@
    "line-length": {
       "strict": true,
       "line_length": 90,
-      "code_block_line_length": 140,
+      "code_block_line_length": 160,
       "tables": false
    },
    "no-duplicate-header": {
