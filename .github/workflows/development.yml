@@ -10,7 +10,7 @@ jobs:
    test:
       name: Lint and Test
       # We must manually provide these steps, instead of use actions and workflows in
-      # `uicpharm/workflows`, since this is a public repo and are workflows are private.
+      # `uicpharm/workflows`, since this is a public repo and our workflows are private.
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v2
