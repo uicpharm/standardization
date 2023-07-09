@@ -45,6 +45,7 @@ module.exports = {
             devDependencies: [
                '**/*.test.{j,t}s',
                '**/.vitepress/**/*.{j,t}s',
+               'gulpfile.*',
                'vue.config.{j,t}s',
             ],
          },
