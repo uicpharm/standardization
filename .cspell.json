@@ -9,12 +9,18 @@
    ],
    "dictionaryDefinitions": [
       {
-         "name": "custom-words",
-         "description": "Custom words for UIC Pharmacy projects.",
-         "path": "./custom-words.txt"
+         "name": "uic-med-words",
+         "description": "Custom industry words for UIC Pharmacy projects.",
+         "path": "./custom-uic-med-words.txt"
+      },
+      {
+         "name": "uic-tech-words",
+         "description": "Custom tech words for UIC Pharmacy projects.",
+         "path": "./custom-uic-tech-words.txt"
       }
    ],
    "dictionaries": [
-      "custom-words"
+      "uic-med-words",
+      "uic-tech-words"
    ]
 }

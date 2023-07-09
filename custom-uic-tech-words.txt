@@ -1,19 +1,34 @@
 # Tech Words
+bitnami
+bunzip
 commitlint
+curlopt
 frontmatter
+gulpfile
 letsencrypt
+moodle
+mysqldump
 nginxproxymanager
+notnull
 nvmrc
 shellcheck
 stylelint
 stylelintrc
 vite
 vitepress
+vlookup
 vuejs
-
-# UIC Vocabulary
-uicpharm
+webservice
 
 # Other typically allowable words
 avenir
+dests
+dateofbirth
+fname
+firstname
+fullname
 fullversion
+lname
+lastname
+mname
+middlename
