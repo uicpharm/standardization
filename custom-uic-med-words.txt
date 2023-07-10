@@ -1,0 +1,7 @@
+acpe
+epid
+nabp
+nasp
+pharmrep
+pharmtech
+uicpharm
