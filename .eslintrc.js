@@ -26,6 +26,7 @@ module.exports = {
    rules: {
       'array-bracket-spacing': [ 'error', 'always' ],
       'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'no-cond-assign': [ 'error', 'except-parens' ],
       'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
       'no-underscore-dangle': [ 'error', { allowAfterThis: true } ],
       indent: [ 'error', 3 ],
