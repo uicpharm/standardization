@@ -21,7 +21,7 @@
    },
    "homepage": "https://github.com/uicpharm/standardization#readme",
    "dependencies": {
-      "@commitlint/cli": "17.5.0",
+      "@commitlint/cli": "18.4.4",
       "@vue/eslint-config-airbnb": "7.0.0",
       "@vue/eslint-config-typescript": "11.0.2",
       "check-node-version": "4.2.1",
