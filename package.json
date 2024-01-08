@@ -3,7 +3,7 @@
    "version": "0.2.1",
    "description": "Lint and code standardization for UIC Pharmacy projects.",
    "scripts": {
-      "test": "check-node-version --node 18.14.2 --npm 9.5.0",
+      "test": "check-node-version --node 20.10.0 --npm 10.2.3",
       "standards": "npm run eslint && npm run yamllint && npm run markdownlint && npm run shellcheck && npm run stylelint && npm run cspell && npm run commitlint",
       "commitlint": "commitlint --from e4053a7754a81",
       "cspell": "cspell . --show-suggestions --no-progress",

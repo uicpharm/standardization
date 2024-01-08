@@ -201,7 +201,7 @@ added as a `test` script in `package.json`.
 
 ```json
 "scripts": {
-   "check-node": "check-node-version --node 18.14.2 --npm 9.5.0",
+   "check-node": "check-node-version --node 20.10.0 --npm 10.2.3",
    "test": "npm run check-node"
 }
 ```
