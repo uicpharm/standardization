@@ -85,12 +85,12 @@ Then add a script in `package.json` similar to this:
 Using [commitlint](https://commitlint.js.org) helps ensure we have well formed,
 thought out, semantic commit messages.
 
-Create a file called `commitlint.config.js` in your project similar to this:
+Create a file called `.commitlintrc.json` in your project similar to this:
 
-```js
-module.exports = {
-   extends: [ '@uicpharm/standardization/commitlint.config.js' ],
-};
+```json
+{
+   "extends": [ "@uicpharm/standardization/commitlint.config.js" ]
+}
 ```
 
 Then add a script in `package.json`, providing the first commit hash to begin linting
@@ -161,12 +161,12 @@ Then add a script in `package.json` in your project similar to this:
 Using [eslint](https://eslint.org) is critical to catch programming errors and maintain
 better coding conventions in JavaScript and TypeScript.
 
-Create a file called `.eslintrc.js` in your project similar to this:
+Create a file called `.eslintrc.json` in your project similar to this:
 
-```js
-module.exports = {
-   extends: './node_modules/@uicpharm/standardization/.eslintrc.js',
-};
+```json
+{
+   "extends": "./node_modules/@uicpharm/standardization/.eslintrc.js",
+}
 ```
 
 Then add a script in `package.json` in your project similar to this:
