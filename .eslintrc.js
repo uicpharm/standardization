@@ -44,10 +44,10 @@ module.exports = {
          'error',
          {
             devDependencies: [
-               '**/*.test.{j,t}s',
-               '**/.vitepress/**/*.{j,t}s',
+               '**/*.test.*',
+               '**/.vitepress/**/*',
                'gulpfile.*',
-               'vue.config.{j,t}s',
+               'vue.config.*',
             ],
          },
       ],
