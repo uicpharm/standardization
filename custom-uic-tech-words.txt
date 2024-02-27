@@ -2,10 +2,12 @@
 bitnami
 bunzip
 commitlint
+commitlintrc
 curlopt
 frontmatter
 gulpfile
 letsencrypt
+markdownlint
 moodle
 mysqldump
 nginxproxymanager
