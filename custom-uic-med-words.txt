@@ -3,5 +3,6 @@ epid
 nabp
 nasp
 pharmrep
+pharmreplicense
 pharmtech
 uicpharm
