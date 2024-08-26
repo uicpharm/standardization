@@ -25,7 +25,7 @@
       "@vue/eslint-config-airbnb": "8.0.0",
       "@vue/eslint-config-typescript": "13.0.0",
       "check-node-version": "4.2.1",
-      "cspell": "8.4.1",
+      "cspell": "8.14.2",
       "eslint": "8.57.0",
       "markdownlint-cli": "0.41.0",
       "shellcheck": "3.0.0",
