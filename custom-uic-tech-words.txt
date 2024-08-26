@@ -6,16 +6,26 @@ commitlintrc
 curlopt
 frontmatter
 gulpfile
+laravel
 letsencrypt
 markdownlint
 moodle
+mtrace
 mysqldump
 nginxproxymanager
 notnull
 nvmrc
+phpmyadmin
+posixsem
+readlink
+realpath
+setaf
+smul
 shellcheck
 stylelint
 stylelintrc
+stylesheet
+unixtime
 vite
 vitepress
 vlookup
@@ -23,6 +33,8 @@ vuejs
 webservice
 
 # Other typically allowable words
+akamal
+aquarles
 avenir
 dests
 dateofbirth
@@ -30,7 +42,9 @@ fname
 firstname
 fullname
 fullversion
+jcurt
 lname
 lastname
 mname
 middlename
+nevoband
