@@ -4,6 +4,7 @@ bunzip
 commitlint
 commitlintrc
 curlopt
+frankenstyle
 frontmatter
 gulpfile
 laravel
@@ -31,6 +32,7 @@ vitepress
 vlookup
 vuejs
 webservice
+wwwroot
 
 # Other typically allowable words
 akamal
