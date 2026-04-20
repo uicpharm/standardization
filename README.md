@@ -161,6 +161,12 @@ Then add a script in `package.json` in your project similar to this:
 Using [eslint](https://eslint.org) is critical to catch programming errors and maintain
 better coding conventions in JavaScript and TypeScript.
 
+As of 2026, eslint and its configurations are the only ones that have not been fully
+modernized, since migrating from eslint 8 involves significant changes, especially since
+eslint 9 introduced a new config format and eslint 10 [no longer supports the old config
+format][eslint-old-config-format]. This introduced breaking changes with existing rule
+libraries. A full upgrade to eslint 10 is coming soon.
+
 Create a file called `.eslintrc.json` in your project similar to this:
 
 ```json
@@ -176,6 +182,8 @@ Then add a script in `package.json` in your project similar to this:
    "eslint": "eslint ."
 }
 ```
+
+[eslint-old-config-format]: https://eslint.org/docs/latest/use/migrate-to-10.0.0#-old-config-format-no-longer-supported
 
 ### YAML Linting
 
@@ -201,7 +209,7 @@ added as a `test` script in `package.json`.
 
 ```json
 "scripts": {
-   "check-node": "check-node-version --node 20.10.0 --npm 10.2.3",
+   "check-node": "check-node-version --node $(cat .nvmrc) --npm 11.11.0 --print",
    "test": "npm run check-node"
 }
 ```
@@ -226,3 +234,45 @@ These are just recommendations, or starting points, and you can add or subtract 
 as needed based on a specific project's needs. For instance, your `test` script will
 likely include other code tests, and your `standards` script may also do TypeScript type
 checking with a script like `tsc --noEmit` or similar.
+
+## Recommended VS Code Settings
+
+Whether you use VS Code, or how you configure your environment, is your business. Our
+philosophy is that you should be able to work on our projects with the IDE of your choice,
+and all linting/tests should be executable as scripts like described above. However, we do
+have some recommendations if you *are* using VS Code.
+
+### Extension Recommendations
+
+In your project, create a [.vscode/extensions.json](./.vscode/extensions.json) file
+similar to the sample in this project, to recommend all of the extensions that are
+beneficial in your project. Our sample may be a good starting point, although you may
+have additions or subtractions.
+
+When a new developer opens your project, the extensions will automatically be recommended
+for installation if they don't have them already installed.
+
+### Auto-fix on Save
+
+It is very convenient to have VS Code auto-fix simple lint issues on save. But to do that,
+you have to add some settings to your `.vscode/settings.json` file. We don't want to
+commit the settings.json file since it may have additional user-specific settings. But
+here are recommendations for you to copy in if you want some of the lint fixing.
+
+```jsonc
+{
+   "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "explicit",
+      "source.fixAll.markdownlint": "explicit"
+   },
+   "eslint.validate": ["javascript", "typescript"],
+   "stylelint.validate": ["css", "scss"],
+   // Optional: Disable VS Code's native format-on-save if it conflicts with plugins
+   "[scss]": { "editor.formatOnSave": false },
+   "[css]": { "editor.formatOnSave": false },
+   "[markdown]": { "editor.formatOnSave": false },
+   "[javascript]": { "editor.formatOnSave": false },
+   "[typescript]": { "editor.formatOnSave": false },
+}
+```
