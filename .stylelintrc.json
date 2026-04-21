@@ -1,22 +1,28 @@
 {
-   "extends": "stylelint-config-standard-scss",
+   "extends": [
+      "stylelint-config-standard-scss",
+      "@stylistic/stylelint-config"
+   ],
+   "plugins": [
+      "@stylistic/stylelint-plugin"
+   ],
    "rules": {
-      "block-opening-brace-space-before": "always",
-      "block-opening-brace-newline-after": "always",
-      "block-closing-brace-newline-before": "always",
-      "color-hex-case": "lower",
+      "@stylistic/block-opening-brace-space-before": "always",
+      "@stylistic/block-opening-brace-newline-after": "always",
+      "@stylistic/block-closing-brace-newline-before": "always",
+      "@stylistic/color-hex-case": "lower",
       "declaration-block-no-duplicate-properties": true,
-      "declaration-block-semicolon-newline-after": "always",
-      "declaration-block-semicolon-space-before": "never",
-      "declaration-block-trailing-semicolon": "always",
-      "declaration-colon-space-after": "always",
-      "declaration-colon-space-before": "never",
-      "indentation": 3,
-      "no-eol-whitespace": true,
+      "@stylistic/declaration-block-semicolon-newline-after": "always",
+      "@stylistic/declaration-block-semicolon-space-before": "never",
+      "@stylistic/declaration-block-trailing-semicolon": "always",
+      "@stylistic/declaration-colon-space-after": "always",
+      "@stylistic/declaration-colon-space-before": "never",
+      "@stylistic/indentation": 3,
+      "@stylistic/no-eol-whitespace": true,
       "length-zero-no-unit": true,
-      "max-empty-lines": 1,
-      "no-missing-end-of-source-newline": true,
-      "unit-case": "lower",
+      "@stylistic/max-empty-lines": 1,
+      "@stylistic/no-missing-end-of-source-newline": true,
+      "@stylistic/unit-case": "lower",
       "value-keyword-case": "lower"
    }
 }
